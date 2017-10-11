@@ -12,6 +12,8 @@ class PagesController < ApplicationController
 
   def contest
     @header = "Congratulations! You're a winner"
+    flash[:notice] = "Sorry, the contest has ended"
+    redirect_to "/welcome"
   end
 
   before_action :set_kitten_url, only: [:kitten, :kittens]
