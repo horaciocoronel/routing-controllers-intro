@@ -4,7 +4,10 @@ class PagesController < ApplicationController
     #render :about #overrides route
     render :welcome
   end
-  def about
 
+  def about
+  end
+
+  def contest
   end
 end
